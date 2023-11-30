@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Global Sunrise Sunset Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Global Sunrise Sunset Dashboard</h1>
+    </header>
+
+    <section id="location-input">
+      <button id="current-location">Use Current Location</button>
+      <select id="location-select">
+        <option value="">Select a City</option>
+        <option value="-38.4161,-63.6167">🇦🇷 Argentina</option>
+        <option value="40.0691,45.0382">🇦🇲 Armenia</option>
+        <option value="12.5211,-69.9683">🇦🇼 Aruba</option>
+        <option value="-25.2744,133.7751">🇦🇺 Australia</option>
+        <option value="47.5162,14.5501">🇦🇹 Austria</option>
+        <option value="40.1431,47.5769">🇦🇿 Azerbaijan</option>
+      </select>
+      <input type="text" id="search-location" placeholder="Search Location" />
+      <button id="search-button">Search</button>
+    </section>
+
+    <img
+      id="initial-image"
+      src="https://img.freepik.com/free-vector/weather-concept-illustration_114360-1254.jpg?w=826&t=st=1701321061~exp=1701321661~hmac=282891618a5b0f3b0e04a9b76ceb545f4cf790fe6794792e999b9ae8b13f9151"
+      alt="Initial Image"
+      style="
+        display: block;
+        max-width: 50%;
+        margin: auto;
+        height: auto;
+        background-color: white;
+      "
+    />
+
+    <div class="card-container" style="display: none">
+      <div class="weather-card" id="today-card">
+        <h2>Weather Information for Today</h2>
+      </div>
+      <div class="weather-card" id="tomorrow-card">
+        <h2>Weather Information for Tomorrow</h2>
+      </div>
+    </div>
+
+    <footer>
+      <p>🌅 Credits: Sunrise Sunset API</p>
+      <p>👩‍💻 Developed by @Neelam-2023</p>
+      <p>🌍 Geolocation - geocode.maps.co</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
